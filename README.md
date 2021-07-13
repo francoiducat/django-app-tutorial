@@ -181,3 +181,18 @@ Running migrations:
 1. Change your models (in models.py).
 2. Run python manage.py makemigrations to create migrations for those changes
 3. Run python manage.py migrate to apply those changes to the database.
+
+## Play with python api
+
+See https://docs.djangoproject.com/en/3.2/intro/tutorial02/
+
+```
+python manage.py shell
+```
+## Django Admin
+
+### Create admin User
+
+```
+python manage.py createsuperuser
+```
