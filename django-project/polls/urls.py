@@ -7,8 +7,14 @@ urlpatterns = [
     path('', views.index, name='index'),
     # ex: /polls/notemplate
     path('notemplate', views.notemplate, name='notemplate'),
-    # ex: /polls/notemplate
+    # ex: /polls/template
     path('template', views.template, name='template'),
+    # ex: /polls/templateRender
+    path('templateRender', views.templateRender, name='templateRender'),
+    # ex: /polls/details/5/
+    path('details/<int:question_id>/', views.details, name='details'),
+    # ex: /polls/detailsShortcut/5/
+    path('detailsShortcut/<int:question_id>/', views.detailsShortcut, name='detailsShortcut'),
     # ex: /polls/5/
     path('<int:question_id>/', views.detail, name='detail'),
     # ex: /polls/5/results/
